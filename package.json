@@ -26,7 +26,7 @@
     "lint": "eslint --format codeframe",
     "lint-staged": "lint-staged",
     "precommit": "npm run lint-staged",
-    "release": "semantic-release",
+    "semantic-release": "semantic-release",
     "test": "jest --coverage"
   },
   "dependencies": {
