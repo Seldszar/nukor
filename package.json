@@ -27,7 +27,7 @@
     "lint-staged": "lint-staged",
     "precommit": "npm run lint-staged",
     "semantic-release": "semantic-release",
-    "test": "jest --coverage"
+    "test": "jest"
   },
   "dependencies": {
     "lodash.some": "^4.6.0",
