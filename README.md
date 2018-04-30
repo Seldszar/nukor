@@ -1,5 +1,7 @@
 # Nukor
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Seldszar/nukor.svg)](https://greenkeeper.io/)
+
 > Creates and focuses a high-frequency field of microwaves, literally cooking the target from within.
 
 Nukor is a simple file watcher built on the top of [NSFW](https://www.npmjs.com/package/nsfw) with a filtering module which removes duplicated events.
