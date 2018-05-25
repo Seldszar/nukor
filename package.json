@@ -1,6 +1,6 @@
 {
   "name": "nukor",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "description": "Creates and focuses a high-frequency field of microwaves, literally cooking the target from within.",
   "author": "Alexandre Breteau <contact@seldszar.fr>",
   "license": "MIT",
@@ -30,19 +30,22 @@
     "test": "jest"
   },
   "dependencies": {
+    "@atom/watcher": "^1.0.7",
+    "lodash.defaults": "^4.2.0",
     "lodash.some": "^4.6.0",
-    "nsfw": "^1.0.16"
+    "lodash.throttle": "^4.1.1",
+    "slash": "^2.0.0"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.2",
-    "eslint": "^4.17.0",
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "husky": "^0.14.3",
-    "jest": "^22.1.4",
-    "lint-staged": "^6.1.0",
-    "prettier": "^1.11.1",
-    "semantic-release": "^12.4.1"
+    "jest": "^23.0.0",
+    "lint-staged": "^7.0.5",
+    "prettier": "^1.12.1",
+    "semantic-release": "^15.1.8"
   },
   "lint-staged": {
     "*.js": "eslint --format codeframe"
