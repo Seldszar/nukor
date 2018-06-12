@@ -1,12 +1,14 @@
 language: node_js
+dist: trusty
+sudo: false
 
 cache:
   directories:
     - ~/.npm
 
 node_js:
-  - 9
   - 8
+  - 10
 
 notifications:
   email: false
