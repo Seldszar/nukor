@@ -2,6 +2,17 @@ language: node_js
 dist: trusty
 sudo: false
 
+addons:
+  apt:
+    packages:
+      - clang-3.9
+      - build-essential
+
+env:
+  global:
+    - CC=clang
+    - CXX=clang++
+
 cache:
   directories:
     - ~/.npm
