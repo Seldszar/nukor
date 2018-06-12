@@ -23,6 +23,7 @@
     "watcher"
   ],
   "scripts": {
+    "commitmsg": "commitlint -E GIT_PARAMS",
     "lint": "eslint --format codeframe",
     "lint-staged": "lint-staged",
     "precommit": "npm run lint-staged",
@@ -37,6 +38,8 @@
     "slash": "^2.0.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.1",
     "babel-eslint": "^8.2.3",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
@@ -46,6 +49,11 @@
     "lint-staged": "^7.0.5",
     "prettier": "^1.12.1",
     "semantic-release": "^15.1.8"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "lint-staged": {
     "*.js": "eslint --format codeframe"
