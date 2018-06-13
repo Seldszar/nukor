@@ -23,10 +23,8 @@
     "watcher"
   ],
   "scripts": {
-    "commitmsg": "commitlint -E GIT_PARAMS",
     "lint": "eslint --format codeframe",
     "lint-staged": "lint-staged",
-    "precommit": "npm run lint-staged",
     "semantic-release": "semantic-release",
     "test": "jest"
   },
@@ -44,7 +42,7 @@
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
-    "husky": "^0.14.3",
+    "husky": "^1.0.0-rc.8",
     "jest": "^23.0.0",
     "lint-staged": "^7.0.5",
     "prettier": "^1.12.1",
@@ -54,6 +52,12 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run lint-staged"
+    }
   },
   "lint-staged": {
     "*.js": "eslint --format codeframe"
