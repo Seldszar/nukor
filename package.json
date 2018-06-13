@@ -22,6 +22,9 @@
     "filesystem",
     "watcher"
   ],
+  "engine": {
+    "node": ">=8.0.0"
+  },
   "scripts": {
     "doc": "documentation build lib/index.js --format=md --output=API.md",
     "lint": "eslint --format codeframe",
