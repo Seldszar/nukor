@@ -23,6 +23,7 @@
     "watcher"
   ],
   "scripts": {
+    "doc": "documentation build lib/index.js --format=md --output=API.md",
     "lint": "eslint --format codeframe",
     "lint-staged": "lint-staged",
     "semantic-release": "semantic-release",
@@ -39,6 +40,7 @@
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-conventional": "^7.0.1",
     "babel-eslint": "^8.2.3",
+    "documentation": "^8.0.0",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
